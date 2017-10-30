@@ -1,0 +1,24 @@
+{
+  "name": "speedcurve2csv",
+  "version": "1.0.0",
+  "description": "Export a CSV file of tests from SpeedCurve APIs",
+  "main": "lib/cli.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "bin": {
+    "speedcurve2csv": "lib/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matteo Fogli",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "meow": "^3.7.0"
+  },
+  "files": [
+    "lib"
+  ]
+}
