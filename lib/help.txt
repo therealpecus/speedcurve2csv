@@ -1,9 +1,22 @@
 Usage: speedcurve2csv <path> [<options>]
 
 Path:
-    Path to a file containing the JSON export from a SpeedCurve URL
+    Path to a file containing the JSON export from a SpeedCurve URL.
+    This parameter is ignored when the JSON file is being piped via stdin, e.g. cat speedcurve-export.json | speedcurve2csv
+
+
+Description:
+    speedcurve2csv converts speedcurve tests exported via API calls in JSON format to CSV format.
+    Tests can be piped via stdin or passed as the first parameter. If no output is specified, the CSV is sent to stdout.
+    speedcurve2csv can also fetch data from speedcurve and automate the process of collecting tests and coverting them to CSV. In this case it requires the API key from speedcurve and either --listurls (to see all available URLs) or --url (to get the actual tests). Note that URLs are different based on the API key (each key refers to a group on SC, with their own URLs).
+
 
 Options:
-    -h, --help        Show this help text.
-    -o, --output      File path to output the results of this run to.
-    -v, --version     Print medic's version.
+    -o, --output FILE   File path to output the results of the conversion to
+    -k, --apikey API    API key from Speedcurve for the site to fetch, required for --listurls and --url
+    -s, --save          Saves the API key. To clear the saved key, pass a new one with -k
+    -u, --url NUM       URL id from Speedcurve of the tests to fetch
+    -l, --listurls      List all URLs available from Speedcurve
+    -d, --days NUM      Number of days of tests to fetch (max 365, default 7)
+    -v, --version       Print speedcurve2csv version number
+    -h, --help          Show this help text
