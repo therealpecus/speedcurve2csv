@@ -38,12 +38,13 @@ Options:
 ```
 
 
-Related
+Credits
 -------
 
- - [sitemap-urls][] - Extract URLs from an XML sitemap.
+speedcurve2csv is more than loosely based on medic from Roland Warmerdam [medic]: https://github.com/Rowno/medic
 
 
 License
 -------
-Speedcurve2csv is released under the MIT license. It is more than loosely based on  medic from Roland Warmerdam [medic]: https://github.com/Rowno/medic
+
+Speedcurve2csv is released under the MIT license.
