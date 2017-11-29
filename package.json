@@ -1,6 +1,6 @@
 {
   "name": "speedcurve2csv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Export a CSV file of tests from SpeedCurve APIs",
   "main": "lib/cli.js",
   "directories": {
