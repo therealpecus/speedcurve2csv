@@ -24,5 +24,18 @@
   },
   "files": [
     "lib"
-  ]
+  ],
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/therealpecus/speedcurve2csv.git"
+  },
+  "keywords": [
+    "csv",
+    "speedcurve"
+  ],
+  "bugs": {
+    "url": "https://github.com/therealpecus/speedcurve2csv/issues"
+  },
+  "homepage": "https://github.com/therealpecus/speedcurve2csv#readme"
 }
